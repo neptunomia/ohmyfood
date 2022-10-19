@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood-sass",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./assets/style.css",
+    "prefix": "postcss ./assets/style.css --use autoprefixer -d ./assets/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noemie-houdou/ohmyfood.git"
+  },
+  "author": "noemie-houdou",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/noemie-houdou/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/noemie-houdou/ohmyfood#readme"
+}
