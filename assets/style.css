@@ -25,6 +25,24 @@ h2 {
   font-weight: 700;
 }
 
+.gradient-button {
+  cursor: pointer;
+  border-radius: 25px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 20px 15px 20px;
+  transition: background-image, box-shadow 300ms;
+}
+.gradient-button:hover {
+  background-image: linear-gradient(#ff88de, #9b63df);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7);
+}
+
 .logo {
   font-family: "Shrikhand", sans-serif;
   font-style: italic;
@@ -82,6 +100,21 @@ header .logo {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
+}
+
+.present {
+  text-align: center;
+}
+.present__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.present__paragraph {
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

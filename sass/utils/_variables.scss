@@ -1,0 +1,6 @@
+$primary-background-color: #9356DC;
+$light-primary-background-color: lighten($primary-background-color, 3%);
+$secondary-background-color: #FF79DA;
+$light-secondary-background-color: lighten($secondary-background-color, 3%);
+$purple-gradient: linear-gradient($secondary-background-color, $primary-background-color);
+$light-purple-gradient: linear-gradient($light-secondary-background-color, $light-primary-background-color);
