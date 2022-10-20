@@ -25,4 +25,39 @@ h2 {
   font-weight: 700;
 }
 
+.logo {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.footer {
+  background-color: #353535;
+  color: #FFF;
+}
+.footer .logo {
+  font-size: 18px;
+  padding: 40px 0px 0px 60px;
+}
+.footer ul {
+  margin-top: 40px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+.footer li {
+  margin-top: 10px;
+}
+.footer__links {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+}
+.footer__icons {
+  font-size: 12px;
+  padding-right: 10px;
+}
+.footer__icons--first {
+  padding-right: 22px;
+}
+
 /*# sourceMappingURL=style.css.map */
