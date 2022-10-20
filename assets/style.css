@@ -60,9 +60,28 @@ h2 {
   padding-right: 22px;
 }
 
+.form-container {
+  background-color: #EAEAEA;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.form-container__items {
+  text-align: center;
+}
+.form-container__input {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #EAEAEA;
+  border: none;
+  margin-left: 10px;
+  width: 130px;
+}
+
 header .logo {
   font-size: 30px;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
