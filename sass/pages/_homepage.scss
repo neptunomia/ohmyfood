@@ -1,0 +1,14 @@
+.present {
+    text-align: center;
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 50px;
+    }
+    &__paragraph {
+        font-size: 18px;
+        font-weight: 300;
+        color: #353535;
+        margin-bottom: 40px;
+    }
+}
