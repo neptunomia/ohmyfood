@@ -2,15 +2,26 @@
     background-color: #EAEAEA;
     padding-top: 10px;
     padding-bottom: 10px;
+
     &__items {
         text-align: center;
     }
+
     &__input {
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         background-color: #EAEAEA;
         border: none;
         margin-left: 10px;
-        width: 130px;
+        width: 33%;
+    }
+
+    & p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    & i {
+        font-size: 18px;
     }
 }
