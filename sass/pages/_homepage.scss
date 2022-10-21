@@ -1,14 +1,91 @@
 .present {
+    background-color: $grey-background;
     text-align: center;
+
     &__title {
-        font-size: 24px;
-        font-weight: 700;
-        margin-top: 50px;
+        padding-top: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
+
     &__paragraph {
         font-size: 18px;
         font-weight: 300;
         color: #353535;
-        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+
+    & button {
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+}
+
+.rest-section {
+    background-color: $grey-background;
+    padding-bottom: 40px;
+
+    &__title {
+        margin: 0px 0px 20px 20px;
+        padding-top: 50px;
+    }
+
+    &__cards {
+        margin: 0px 20px 0px 20px;
+        text-align: center;
+    }
+}
+
+.fct-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__title {
+        margin-left: 20px;
+    }
+
+    &__list-container {
+        padding: 0;
+    }
+
+    &__list-item {
+        margin: 0px 20px 20px 20px;
+        padding: 28px 0px 25px 0px;
+        background-color: #f9f9f9;
+        border-radius: 18px;
+        box-shadow: 5px 5px 20px #B3B3B3;
+        font-size: 16px;
+        font-weight: 500;
+
+        & span {
+            background-color: $primary-background-color;
+            color: #fff;
+            border-radius: 50%;
+            padding: 4px 8px 4px 8px;
+            font-size: 14px;
+            position: relative;
+            left: -10px;
+        }
+
+        & i {
+            font-size: 20px;
+            color: #7e7e7e;
+            padding-left: 10px;
+            padding-right: 20px;
+            position: relative;
+            top: 2px;
+        }
+
+        & .fa-mobile-screen-button {
+            padding-right: 27px;
+        }
+
+        & .fa-list-ul {
+            padding-right: 22px;
+        }
+
+        & .fa-store {
+            color: $primary-background-color;
+        }
     }
 }
