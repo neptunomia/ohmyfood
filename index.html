@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
@@ -35,82 +36,102 @@
         <section class="present">
             <h1 class="present__title">Réservez le menu qui <br>vous convient</h1>
             <p class="present__paragraph">Découvrez des restaurants d'exception, <br>sélectionnés par nos soins.</p>
-            <button type="submit" class="gradient-button">Explorer nos restaurants</button>
+            <button type="submit" class="button-general-style gradient-button">Explorer nos restaurants</button>
         </section>
-        <section>
-            <h2>Fonctionnement</h2>
-            <ul>
-                <li><a href="#">
+        <section class="fct-section">
+            <h2 class="fct-section__title">Fonctionnement</h2>
+            <ul class="fct-section__list-container">
+                <li class="fct-section__list-item"><a href="#">
                         <span>1</span>
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         Choisissez un restaurant
                     </a></li>
-                <li><a href="#">
+                <li class="fct-section__list-item"><a href="#">
                         <span>2</span>
                         <i class="fa-solid fa-list-ul"></i>
                         Composez votre menu
                     </a></li>
-                <li><a href="#">
+                <li class="fct-section__list-item"><a href="#">
                         <span>3</span>
                         <i class="fa-solid fa-store"></i>
                         Dégustez au restaurant
                     </a></li>
             </ul>
         </section>
-        <section>
-            <h2>Restaurants</h2>
-            <div>
-                <article>
+        <section class="rest-section">
+            <h2 class="rest-section__title">Restaurants</h2>
+            <div class="rest-section__cards">
+                <article class="card">
                     <a href="#">
-                        <div>
+                        <div class="img-container">
                             <img src="assets/images/la_palette_du_gout.jpg"
-                                alt="Photo d'un plat au restaurant La palette du goût à Ménilmontant">
-                            <span>Nouveau</span>
+                                alt="Photo d'un plat au restaurant La palette du goût à Ménilmontant"
+                                class="img-container__img">
+                            <button class="img-container__btn button-general-style new-button">Nouveau</button>
                         </div>
-                        <div>
-                            <h3>La palette du goût</h3>
-                            <span>Ménilmontant</span>
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="card__texts">
+                            <div class="card__texts-margins">
+                                <h3>La palette du goût</h3>
+                                <span>Ménilmontant</span>
+                            </div>
+                            <button class="heart-button">
+                                <i class="fa-regular fa-heart card__texts-margins"></i>
+                            </button>
                         </div>
                     </a>
                 </article>
-                <article>
+                <article class="card">
                     <a href="#">
-                        <div>
+                        <div class="img-container">
                             <img src="assets/images/la_note_enchantee.jpg"
-                                alt="Photo d'un plat au restaurant La note enchantée à Charonne">
-                            <span>Nouveau</span>
+                                alt="Photo d'un plat au restaurant La note enchantée à Charonne"
+                                class="img-container__img">
+                            <button class="img-container__btn button-general-style new-button">Nouveau</button>
                         </div>
-                        <div>
-                            <h3>La note enchantée</h3>
-                            <span>Charonne</span>
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="card__texts">
+                            <div class="card__texts-margins">
+                                <h3>La note enchantée</h3>
+                                <span>Charonne</span>
+                            </div>
+                            <button class="heart-button">
+                                <i class="fa-regular fa-heart card__texts-margins"></i>
+                            </button>
                         </div>
                     </a>
                 </article>
-                <article>
+                <article class="card">
                     <a href="#">
-                        <div>
+                        <div class="img-container">
                             <img src="assets/images/a_la_francaise.jpg"
-                                alt="Photo d'un plat au restaurant À la française à Cite Rouge">
+                                alt="Photo d'un plat au restaurant À la française à Cite Rouge"
+                                class="img-container__img">
                         </div>
-                        <div>
-                            <h3>À la française</h3>
-                            <span>Cité Rouge</span>
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="card__texts">
+                            <div class="card__texts-margins">
+                                <h3>À la française</h3>
+                                <span>Cité Rouge</span>
+                            </div>
+                            <button class="heart-button">
+                                <i class="fa-regular fa-heart card__texts-margins"></i>
+                            </button>
                         </div>
                     </a>
                 </article>
-                <article>
+                <article class="card">
                     <a href="#">
-                        <div>
+                        <div class="img-container">
                             <img src="assets/images/le_delice_des_sens.jpg"
-                                alt="Photo d'un plat au restaurant Le délice des sens à Folie-Méricourt">
+                                alt="Photo d'un plat au restaurant Le délice des sens à Folie-Méricourt"
+                                class="img-container__img">
                         </div>
-                        <div>
-                            <h3>Le délice des sens</h3>
-                            <span>Folie-Méricourt</span>
-                            <i class="fa-regular fa-heart"></i>
+                        <div class="card__texts">
+                            <div class="card__texts-margins">
+                                <h3>Le délice des sens</h3>
+                                <span>Folie-Méricourt</span>
+                            </div>
+                            <button class="heart-button">
+                                <i class="fa-regular fa-heart card__texts-margins"></i>
+                            </button>
                         </div>
                     </a>
                 </article>
@@ -123,14 +144,14 @@
         <ul>
             <li>
                 <a href="#" class="footer__links">
-                    <i class="fa-solid fa-utensils footer__icons footer__icons--first"></i>
-                    Proposer un restaurant
+                    <i class="fa-solid fa-utensils footer__icons"></i>
+                    <span class="footer__text-1">Proposer un restaurant</span>
                 </a>
             </li>
             <li>
                 <a href="#" class="footer__links">
                     <i class="fa-solid fa-handshake-angle footer__icons"></i>
-                    Devenir partenaire
+                    <span class="footer__text-2">Devenir partenaire</span>
                 </a>
             </li>
             <li>
