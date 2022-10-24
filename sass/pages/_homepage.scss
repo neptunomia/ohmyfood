@@ -30,47 +30,6 @@
     }
 }
 
-.rest-section {
-    background-color: $grey-background;
-    padding-bottom: 40px;
-
-    @media all and (min-width: 768px) {
-        padding-bottom: 80px;
-    }
-
-    &__container {
-        @media all and (min-width: 768px) and (max-width: 930px) {
-            width: 95%;
-            margin: auto;
-        }
-
-        @media all and (min-width: 930px) and (max-width: 1310px) {
-            width: 90%;
-            margin: auto;
-        }
-
-        @media all and (min-width: 1310px) {
-            width: 80%;
-            margin: auto;
-        }
-    }
-
-    &__title {
-        margin: 0px 0px 20px 20px;
-        padding-top: 50px;
-    }
-
-    &__cards {
-        margin: 0px 20px 0px 20px;
-        text-align: center;
-
-        @media all and (min-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-}
-
 .fct-section {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -177,6 +136,47 @@
 
         & .fa-store {
             color: $primary-background-color;
+        }
+    }
+}
+
+.rest-section {
+    background-color: $grey-background;
+    padding-bottom: 40px;
+
+    @media all and (min-width: 768px) {
+        padding-bottom: 80px;
+    }
+
+    &__container {
+        @media all and (min-width: 768px) and (max-width: 930px) {
+            width: 95%;
+            margin: auto;
+        }
+
+        @media all and (min-width: 930px) and (max-width: 1310px) {
+            width: 90%;
+            margin: auto;
+        }
+
+        @media all and (min-width: 1310px) {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    &__title {
+        margin: 0px 0px 20px 20px;
+        padding-top: 50px;
+    }
+
+    &__cards {
+        margin: 0px 20px 0px 20px;
+        text-align: center;
+
+        @media all and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
