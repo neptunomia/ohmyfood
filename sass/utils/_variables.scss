@@ -3,9 +3,9 @@ $secondary-background-color: #FF79DA;
 $grey-background: #D2D2D2;
 $new-button-background: #99E2D0;
 
-$light-primary-background-color: lighten($primary-background-color, 3%);
-$light-secondary-background-color: lighten($secondary-background-color, 3%);
-$light-new-button-background: lighten($new-button-background, 3%);
+$light-primary-background-color: lighten($primary-background-color, 5%);
+$light-secondary-background-color: lighten($secondary-background-color, 5%);
+$light-new-button-background: lighten($new-button-background, 15%);
 
 $purple-gradient: linear-gradient($secondary-background-color, $primary-background-color);
 $light-purple-gradient: linear-gradient($light-secondary-background-color, $light-primary-background-color);
