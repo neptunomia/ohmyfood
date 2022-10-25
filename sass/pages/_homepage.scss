@@ -37,17 +37,12 @@
     &__container {
         width: 100%;
 
-        @media all and (min-width: 768px) and (max-width: 930px) {
-            width: 95%;
-            margin: auto;
-        }
-
-        @media all and (min-width: 930px) and (max-width: 1310px) {
+        @media all and (min-width: 992px) and (max-width: 1200px) {
             width: 90%;
             margin: auto;
         }
 
-        @media all and (min-width: 1310px) {
+        @media all and (min-width: 1200px) {
             width: 80%;
             margin: auto;
         }
@@ -76,31 +71,28 @@
         box-shadow: 5px 5px 20px #B3B3B3;
         font-size: 16px;
         font-weight: 500;
+        cursor: pointer;
         transition: background-color 500ms, box-shadow 300ms;
 
         &:hover {
             @include hover-fct;
         }
 
-        @media all and (min-width: 768px) and (max-width: 1170px) {
-            font-size: 14px;
-        }
-
         @media all and (min-width: 768px) {
             margin-left: 1.5%;
             margin-right: 1.5%;
         }
-
-        @media all and (min-width: 768px) and (max-width: 930px) {
+        @media all and (min-width: 768px) and (max-width: 1200px) {
+            font-size: 15px;
             width: 30%;
         }
-
-        @media all and (min-width: 930px) {
+        
+        @media all and (min-width: 1200px) {
             padding-right: 4%;
             width: 25%;
         }
 
-        & span {
+        &__number {
             background-color: $primary-background-color;
             color: #fff;
             border-radius: 50%;
@@ -127,15 +119,11 @@
             padding-right: 22px;
         }
 
-        @media all and (min-width: 768px) and (max-width: 1060px) {
+        @media all and (min-width: 768px) {
             & i, & .fa-mobile-screen-button, & .fa-list-ul {
-                padding-left: 0;
-                padding-right: 8px;
+                padding-left: 2%;
+                padding-right: 4%;
             }
-        }
-
-        & .fa-store {
-            color: $primary-background-color;
         }
     }
 }
@@ -149,17 +137,13 @@
     }
 
     &__container {
-        @media all and (min-width: 768px) and (max-width: 930px) {
-            width: 95%;
-            margin: auto;
-        }
 
-        @media all and (min-width: 930px) and (max-width: 1310px) {
+        @media all and (min-width: 992px) and (max-width: 1200px) {
             width: 90%;
             margin: auto;
         }
 
-        @media all and (min-width: 1310px) {
+        @media all and (min-width: 1200px) {
             width: 80%;
             margin: auto;
         }
@@ -176,7 +160,9 @@
 
         @media all and (min-width: 768px) {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 0;
         }
     }
 }
