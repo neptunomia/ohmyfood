@@ -40,32 +40,48 @@ h3 {
 
 .button-general-style {
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   border: none;
   font-family: "Roboto", sans-serif;
 }
 
 .gradient-button {
   border-radius: 30px;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  position: relative;
+  z-index: 1;
   font-size: 16px;
   font-weight: 500;
   color: #fff;
   padding: 20px 25px 20px 25px;
-  transition: background-image, box-shadow 300ms;
 }
-.gradient-button:hover {
+.gradient-button::after {
+  border-radius: 30px;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  transition: opacity 300ms linear;
+  opacity: 0;
+}
+.gradient-button:hover::after {
+  opacity: 1;
 }
 
 .heart-button {
-  background-color: #fff;
   border: none;
   border-bottom-right-radius: 40px;
   width: 50px;
   height: 60px;
   position: relative;
+}
+.heart-button--color {
+  opacity: 0;
 }
 
 .new-button {
@@ -75,11 +91,11 @@ h3 {
   border-radius: 2px;
   font-size: 14px;
   font-weight: 500;
-  transition: background-color 500ms, box-shadow 300ms;
+  transition: background-color 300ms, box-shadow 300ms;
 }
 .new-button:hover {
   background-color: #d5f3eb;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
 }
 @media all and (min-width: 768px) and (max-width: 1105px) {
   .new-button {

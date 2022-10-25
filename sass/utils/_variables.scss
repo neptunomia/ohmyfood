@@ -7,5 +7,5 @@ $light-primary-background-color: lighten($primary-background-color, 5%);
 $light-secondary-background-color: lighten($secondary-background-color, 5%);
 $light-new-button-background: lighten($new-button-background, 15%);
 
-$purple-gradient: linear-gradient($secondary-background-color, $primary-background-color);
+$purple-gradient: linear-gradient(200.64deg, $primary-background-color -5.2%, $secondary-background-color 110.74%);
 $light-purple-gradient: linear-gradient($light-secondary-background-color, $light-primary-background-color);

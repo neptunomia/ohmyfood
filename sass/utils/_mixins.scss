@@ -1,11 +1,6 @@
-@mixin hover-gradient-button {
-    background-image: $light-purple-gradient;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7);
-}
-
 @mixin hover-new-button {
     background-color: $light-new-button-background;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 @mixin hover-fct {
