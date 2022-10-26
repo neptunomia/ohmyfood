@@ -1,11 +1,11 @@
-$primary-background-color: #9356DC;
-$secondary-background-color: #FF79DA;
-$grey-background: #D2D2D2;
-$new-button-background: #99E2D0;
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$section-background: #f7f7f7;
 
-$light-primary-background-color: lighten($primary-background-color, 5%);
-$light-secondary-background-color: lighten($secondary-background-color, 5%);
-$light-new-button-background: lighten($new-button-background, 15%);
+$light-primary-background-color: lighten($primary-color, 5%);
+$light-secondary-background-color: lighten($secondary-color, 5%);
+$light-new-button-background: lighten($tertiary-color, 15%);
 
-$purple-gradient: linear-gradient(200.64deg, $primary-background-color -5.2%, $secondary-background-color 110.74%);
+$purple-gradient: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
 $light-purple-gradient: linear-gradient($light-secondary-background-color, $light-primary-background-color);

@@ -190,6 +190,35 @@ h3 {
   right: 15px;
 }
 
+.menu-list__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu-list__card__content {
+  padding-left: 10px;
+}
+.menu-list__card__content h3 {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.menu-list__card__content p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.menu-list__card__price {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+.menu-list__card__check {
+  display: none;
+}
+
 .logo {
   font-family: "Shrikhand", sans-serif;
   font-style: italic;
@@ -321,7 +350,7 @@ header .logo {
 }
 
 .present {
-  background-color: #D2D2D2;
+  background-color: #f7f7f7;
   text-align: center;
 }
 .present__title {
@@ -448,7 +477,7 @@ header .logo {
 }
 
 .rest-section {
-  background-color: #D2D2D2;
+  background-color: #f7f7f7;
   padding-bottom: 40px;
 }
 @media all and (min-width: 768px) {
@@ -499,20 +528,41 @@ header .logo {
 .menu {
   background: #f7f7f7;
   position: relative;
-  top: -90px;
-  border-radius: 40px;
+  top: -70px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-bottom: -35px;
 }
-
-.menu-title {
+.menu__title {
   display: flex;
   align-items: baseline;
 }
-.menu-title__h1 {
+.menu__title__h1 {
   margin-left: 15px;
   margin-right: 35px;
 }
-.menu-title__icon {
+.menu__title__icon {
   font-size: 24px;
+}
+.menu__category h2 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 15px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+.menu__button {
+  margin-top: 40px;
+  text-align: center;
+}
+.menu__button button {
+  padding: 13px 40px 13px 40px;
+}
+
+.menu-list {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

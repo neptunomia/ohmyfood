@@ -10,14 +10,15 @@
 }
 
 .menu {
-    background: #f7f7f7;
+    background: $section-background;
     position: relative;
-    top: -90px;
-    border-radius: 40px;
-}
+    top: -70px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-bottom: -35px;
 
-.menu-title {
-    display: flex;
+    &__title {
+        display: flex;
     align-items: baseline;
 
     &__h1 {
@@ -28,4 +29,28 @@
     &__icon {
         font-size: 24px;
     }
+    }
+
+    &__category h2 {
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 15px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid $tertiary-color;
+        width: 40px;
+    }
+
+    &__button {
+        margin-top: 40px;
+        text-align: center;
+
+        & button {
+            padding: 13px 40px 13px 40px;
+        }
+    }
+}
+
+.menu-list {
+    padding-left: 10px;
+    padding-right: 10px;
 }

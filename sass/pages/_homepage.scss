@@ -1,5 +1,5 @@
 .present {
-    background-color: $grey-background;
+    background-color: $section-background;
     text-align: center;
 
     &__title {
@@ -93,7 +93,7 @@
         }
 
         &__number {
-            background-color: $primary-background-color;
+            background-color: $primary-color;
             color: #fff;
             border-radius: 50%;
             padding: 4px 8px 4px 8px;
@@ -129,7 +129,7 @@
 }
 
 .rest-section {
-    background-color: $grey-background;
+    background-color: $section-background;
     padding-bottom: 40px;
 
     @media all and (min-width: 768px) {

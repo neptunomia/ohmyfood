@@ -73,3 +73,37 @@
         right: 15px;
     }
 }
+
+.menu-list__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__content {
+        padding-left: 10px;
+    }
+
+    &__content h3 {
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    &__content p {
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    &__price {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        padding-right: 20px;
+    }
+    
+    &__check {
+        display: none;
+    }
+}
