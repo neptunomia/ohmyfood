@@ -41,8 +41,17 @@
     width: 50px;
     height: 60px;
     position: relative;
-    &--color {
+    &__full {
         opacity: 0;
+        background-image: $purple-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: opacity 800ms;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
