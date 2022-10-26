@@ -1,6 +1,29 @@
 header .logo {
     font-size: 30px;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.menu-header__logo
+{
+    position: relative;
+    z-index: -1;
+}
+
+.menu-header__icon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    left: 22px;
+    top: 20px;
+    text-align: center;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 500ms, box-shadow 300ms, color 300ms;
+
+    &--hover:hover{
+        @include return-button;
+    }
 }

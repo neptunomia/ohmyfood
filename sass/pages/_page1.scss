@@ -1,0 +1,31 @@
+.img-background {
+    width: 100%;
+    height: 275px;
+}
+
+.img-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    background: #f7f7f7;
+    position: relative;
+    top: -90px;
+    border-radius: 40px;
+}
+
+.menu-title {
+    display: flex;
+    align-items: baseline;
+
+    &__h1 {
+        margin-left: 15px;
+        margin-right: 35px;
+    }
+
+    &__icon {
+        font-size: 24px;
+    }
+}

@@ -10,3 +10,13 @@
         color: $primary-background-color;
     }
 }
+
+@mixin return-button {
+    border-radius: 50px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+    color: $primary-background-color;
+    padding: 5px 8px 3px 8px;
+    .fa-arrow-left{
+        transform: scale(1.15);
+    }
+}
