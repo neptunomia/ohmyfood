@@ -363,6 +363,9 @@ header .logo {
   background-color: #F5EDFF;
   box-shadow: 8px 8px 23px #9e9e9e;
 }
+.fct-section__list-item:hover .fct-section__list-item__icon {
+  color: #9356DC;
+}
 @media all and (min-width: 768px) {
   .fct-section__list-item {
     margin-left: 1.5%;
