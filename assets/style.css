@@ -38,7 +38,7 @@ h3 {
   font-weight: 700;
 }
 
-.menu-title__h1 {
+.menu__title__h1 {
   font-family: "Shrikhand", sans-serif;
   font-style: italic;
   font-size: 28px;
@@ -117,6 +117,23 @@ h3 {
   }
 }
 
+.menu-list__card__check {
+  background-color: #99E2D0;
+  color: #fff;
+  font-size: 22px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+  width: 60px;
+  min-width: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.menu-list__card__check i {
+  align-self: center;
+}
+
 .card {
   width: 100%;
   height: 100%;
@@ -191,32 +208,56 @@ h3 {
 }
 
 .menu-list__card {
+  width: 100%;
+  height: 69px;
+  min-height: 69px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  cursor: pointer;
+  overflow: hidden;
 }
 .menu-list__card__content {
+  height: 100%;
+  width: 85%;
   padding-left: 10px;
+  overflow: hidden;
+}
+.menu-list__card__content h3, .menu-list__card__content p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-list__card__content h3 {
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 0px;
 }
 .menu-list__card__content p {
   font-size: 15px;
   font-weight: 300;
-  margin-top: 2px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 12px;
 }
 .menu-list__card__price {
   font-size: 15px;
   font-weight: 700;
-  margin-bottom: 10px;
-  padding-right: 20px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: 40px;
+  transition: margin-right 300ms;
 }
 .menu-list__card__check {
-  display: none;
+  opacity: 0;
+  top: 0;
+  margin-right: -80px;
+  transition: margin-right 300ms, opacity 300ms;
+}
+.menu-list__card:hover .menu-list__card__price {
+  margin-right: 20px;
+}
+.menu-list__card:hover .menu-list__card__check {
+  margin-right: 0;
+  opacity: 1;
 }
 
 .logo {
@@ -518,6 +559,11 @@ header .logo {
   width: 100%;
   height: 275px;
 }
+@media all and (min-width: 768px) {
+  .img-background {
+    height: 475px;
+  }
+}
 
 .img-background img {
   width: 100%;
@@ -528,14 +574,35 @@ header .logo {
 .menu {
   background: #f7f7f7;
   position: relative;
-  top: -70px;
+  margin-top: -70px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  margin-bottom: -35px;
+  padding-bottom: 40px;
+}
+@media all and (min-width: 768px) {
+  .menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .menu {
+    width: 80%;
+  }
+}
+@media all and (min-width: 992px) {
+  .menu {
+    width: 70%;
+  }
 }
 .menu__title {
   display: flex;
   align-items: baseline;
+}
+@media all and (min-width: 768px) {
+  .menu__title {
+    justify-content: center;
+  }
 }
 .menu__title__h1 {
   margin-left: 15px;
@@ -543,6 +610,21 @@ header .logo {
 }
 .menu__title__icon {
   font-size: 24px;
+}
+.menu__category {
+  width: 100%;
+}
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  .menu__category__starters, .menu__category__mains, .menu__category__desserts {
+    margin: auto;
+    width: 70%;
+  }
+}
+@media all and (min-width: 1200px) {
+  .menu__category__starters, .menu__category__mains, .menu__category__desserts {
+    margin: auto;
+    width: 60%;
+  }
 }
 .menu__category h2 {
   font-size: 16px;
