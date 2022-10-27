@@ -1,13 +1,17 @@
 @import "./utils/mixins";
 @import "./utils/variables";
+
 @import "./base/general";
 @import "./base/links";
 @import "./base/typography";
+
 @import "./components/buttons";
 @import "./components/cards";
 @import "./components/logo";
+
 @import "./layouts/footer";
 @import "./layouts/forms";
 @import "./layouts/header";
+
 @import "./pages/homepage";
-@import "./pages/page1";
+@import "./pages/menu";
