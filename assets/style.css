@@ -214,7 +214,7 @@ h3 {
   }
   to {
     opacity: 1;
-    transform: translateX(O);
+    transform: translateX(0px);
   }
 }
 .menu-list__card {
