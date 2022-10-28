@@ -9,3 +9,7 @@ $light-new-button-background: lighten($tertiary-color, 15%);
 
 $purple-gradient: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
 $light-purple-gradient: linear-gradient($light-secondary-background-color, $light-primary-background-color);
+
+$menu-appear-dur: 360ms;
+$menu-appear-dur-var: 480ms;
+$menu-appear-delay: 120ms;
