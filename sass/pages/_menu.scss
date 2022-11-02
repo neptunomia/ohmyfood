@@ -43,8 +43,7 @@
         }
 
     &__h1 {
-        margin-left: 15px;
-        margin-right: 35px;
+        margin: 40px 35px 0 15px;
     }
 
     &__icon {
@@ -70,6 +69,7 @@
     &__category h2 {
         font-size: 16px;
         font-weight: 300;
+        margin-top: 40px;
         margin-left: 15px;
         padding-bottom: 5px;
         border-bottom: 3px solid $tertiary-color;
@@ -89,4 +89,8 @@
 .menu-list {
     padding-left: 10px;
     padding-right: 10px;
+
+    &__card {
+        margin-bottom: 15px;
+    }
 }

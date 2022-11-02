@@ -2,6 +2,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 768px;
+  min-height: 100vh;
 }
 @media all and (min-width: 768px) {
   body {
@@ -46,7 +47,7 @@ h3 {
 
 .button-general-style {
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border: none;
   font-family: "Roboto", sans-serif;
 }
@@ -70,7 +71,7 @@ h3 {
   bottom: 0;
   left: 0;
   background-image: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
   z-index: -1;
   transition: opacity 300ms linear;
   opacity: 0;
@@ -103,13 +104,14 @@ h3 {
   color: #008766;
   padding: 6px 12px 6px 12px;
   border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   font-size: 14px;
   font-weight: 500;
   transition: background-color 300ms, box-shadow 300ms;
 }
 .new-button:hover {
   background-color: #d5f3eb;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 @media all and (min-width: 768px) and (max-width: 1105px) {
   .new-button {
@@ -139,7 +141,7 @@ h3 {
   height: 100%;
   border-radius: 20px;
   background-color: #FFF;
-  box-shadow: 5px 5px 20px #B3B3B3;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   margin: 0 0 20px 0;
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -402,7 +404,7 @@ h3 {
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: baseline;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 }
 .footer .logo {
@@ -423,17 +425,18 @@ h3 {
 @media all and (min-width: 768px) {
   .footer ul {
     display: flex;
+    padding-bottom: 50px;
   }
 }
 .footer li {
   margin-top: 5px;
 }
-@media all and (min-width: 768px) and (max-width: 901px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
   .footer li {
     margin-right: 20px;
   }
 }
-@media all and (min-width: 901px) {
+@media all and (min-width: 992px) {
   .footer li {
     margin-right: 40px;
   }
@@ -488,6 +491,12 @@ header .logo {
   padding-top: 10px;
   padding-bottom: 5px;
 }
+@media all and (min-width: 768px) {
+  header .logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 
 .menu-header__logo {
   position: relative;
@@ -499,7 +508,7 @@ header .logo {
   height: 30px;
   font-size: 20px;
   position: absolute;
-  left: 22px;
+  left: 20px;
   top: 20px;
   text-align: center;
   z-index: 1;
@@ -508,12 +517,18 @@ header .logo {
 }
 .menu-header__icon--hover:hover {
   border-radius: 50px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
   color: #9356DC;
   padding: 5px 8px 3px 8px;
 }
 .menu-header__icon--hover:hover .fa-arrow-left {
   transform: scale(1.15);
+}
+@media all and (min-width: 768px) {
+  .menu-header__icon {
+    left: 60px;
+    top: 30px;
+  }
 }
 
 .present {
@@ -531,9 +546,19 @@ header .logo {
   color: #353535;
   margin-top: 15px;
 }
+@media all and (min-width: 768px) {
+  .present__paragraph {
+    margin-top: 30px;
+  }
+}
 .present button {
   margin-top: 15px;
   margin-bottom: 60px;
+}
+@media all and (min-width: 768px) {
+  .present button {
+    margin-bottom: 40px;
+  }
 }
 @media all and (min-width: 768px) {
   .present__title br, .present__paragraph br {
@@ -582,7 +607,7 @@ header .logo {
   padding: 28px 0px 25px 0px;
   background-color: #f9f9f9;
   border-radius: 18px;
-  box-shadow: 5px 5px 20px #B3B3B3;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -590,7 +615,7 @@ header .logo {
 }
 .fct-section__list-item:hover {
   background-color: #F5EDFF;
-  box-shadow: 8px 8px 23px #9e9e9e;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 .fct-section__list-item:hover .fct-section__list-item__icon {
   color: #9356DC;
@@ -649,7 +674,7 @@ header .logo {
 }
 @media all and (min-width: 768px) {
   .rest-section {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 }
 @media all and (min-width: 992px) and (max-width: 1200px) {
@@ -667,6 +692,11 @@ header .logo {
 .rest-section__title {
   margin: 0px 0px 20px 20px;
   padding-top: 50px;
+}
+@media all and (min-width: 768px) {
+  .rest-section__title {
+    margin-bottom: 30px;
+  }
 }
 .rest-section__cards {
   margin: 0px 20px 0px 20px;
@@ -731,8 +761,7 @@ header .logo {
   }
 }
 .menu__title__h1 {
-  margin-left: 15px;
-  margin-right: 35px;
+  margin: 40px 35px 0 15px;
 }
 .menu__title__icon {
   font-size: 24px;
@@ -755,6 +784,7 @@ header .logo {
 .menu__category h2 {
   font-size: 16px;
   font-weight: 300;
+  margin-top: 40px;
   margin-left: 15px;
   padding-bottom: 5px;
   border-bottom: 3px solid #99E2D0;
@@ -771,6 +801,9 @@ header .logo {
 .menu-list {
   padding-left: 10px;
   padding-right: 10px;
+}
+.menu-list__card {
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
