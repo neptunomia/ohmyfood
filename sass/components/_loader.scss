@@ -49,6 +49,34 @@
         border: 4px solid transparent;
         background: $section-background;
 
+        &::before {
+            content: "";
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            border: 4px solid transparent;
+            border-left-color: rgba(153, 226, 208, 0.5);
+            border-right-color: rgba(153, 226, 208, 0.5);
+            border-radius: 50%;
+            animation: spin 700ms linear infinite;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 2px solid rgba(255, 121, 218, 0.4);
+            border-top-color: $secondary-color;
+            border-radius: 50%;
+            animation: spin 900ms linear infinite;
+            box-shadow: 0 0 10px #a5a5a5;
+        }
+
         &__icon {
             width: 100%;
             height: 100%;
@@ -65,33 +93,5 @@
                 animation: icon-scale 1100ms ease-in-out infinite;
             }
         }
-    }
-
-    &__anim::before {
-        content: "";
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: -4px;
-        left: -4px;
-        border: 4px solid transparent;
-        border-left-color: rgba(153, 226, 208, 0.5);
-        border-right-color: rgba(153, 226, 208, 0.5);
-        border-radius: 80px;
-        animation: spin 700ms linear infinite;
-    }
-
-    &__anim::after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        border: 2px solid rgba(255, 121, 218, 0.4);
-        border-top-color: $secondary-color;
-        border-radius: 50%;
-        animation: spin 900ms linear infinite;
-        box-shadow: 0 0 10px #a5a5a5;
     }
 }
