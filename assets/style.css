@@ -219,6 +219,14 @@ h3 {
     transform: translateX(0px);
   }
 }
+@keyframes icon-check-anim {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 .menu-list__card {
   width: 100%;
   height: 69px;
@@ -280,6 +288,9 @@ h3 {
 .menu-list__card:hover .menu-list__card__check {
   margin-right: 0;
   opacity: 1;
+}
+.menu-list__card:hover .menu-list__card__check .fa-circle-check {
+  animation: icon-check-anim 300ms linear;
 }
 
 .menu-list__card-note {
@@ -765,6 +776,14 @@ header .logo {
 }
 .menu__title__icon {
   font-size: 24px;
+  cursor: pointer;
+}
+.menu__title__icon__empty {
+  position: relative;
+}
+.menu__title__icon__full {
+  position: relative;
+  left: -30px;
 }
 .menu__category {
   width: 100%;

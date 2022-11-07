@@ -28,6 +28,10 @@
     & .menu-list__card__check {
         margin-right: 0;
         opacity: 1;
+
+    & .fa-circle-check {
+        animation: icon-check-anim 300ms linear;
+    }
     }
 }
 
